@@ -7,6 +7,7 @@ class Menuitem {
   final String link;
   final String routeName;
   final IconData iconData;
+  final Widget routeComponentName;
 
   const Menuitem({
     required this.link,
@@ -14,6 +15,7 @@ class Menuitem {
     required this.title,
     required this.iconData,
     required this.routeName,
+    required this.routeComponentName,
   });
 }
 
@@ -24,6 +26,7 @@ const menuItems = <Menuitem>[
     title: 'Botones',
     iconData: Icons.smart_button_rounded,
     routeName: ButtonsScreen.name,
+    routeComponentName: ButtonsScreen(),
   ),
   Menuitem(
     link: '/cards',
@@ -31,5 +34,14 @@ const menuItems = <Menuitem>[
     title: 'Tarjetas',
     iconData: Icons.credit_card_outlined,
     routeName: CardsScreen.name,
+    routeComponentName: CardsScreen(),
+  ),
+  Menuitem(
+    link: '/progress-indicator',
+    subTitle: 'Progress Indicators',
+    title: 'Progress Indicators',
+    iconData: Icons.refresh_rounded,
+    routeName: ProgressScreen.name,
+    routeComponentName: ProgressScreen(),
   ),
 ];
