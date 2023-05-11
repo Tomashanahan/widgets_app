@@ -44,4 +44,12 @@ const menuItems = <Menuitem>[
     routeName: ProgressScreen.name,
     routeComponentName: ProgressScreen(),
   ),
+  Menuitem(
+    link: '/snack-bars',
+    subTitle: 'snack-bars',
+    title: 'Snack Bars',
+    iconData: Icons.info_outline,
+    routeName: SnackBarScreen.name,
+    routeComponentName: SnackBarScreen(),
+  ),
 ];

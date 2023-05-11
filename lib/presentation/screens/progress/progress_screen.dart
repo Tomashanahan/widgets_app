@@ -57,7 +57,7 @@ class _ControlledProgressIndicator extends StatelessWidget {
                 strokeWidth: 2,
                 value: progressValue,
               ),
-              const SizedBox(width: 20),
+              const  SizedBox(width: 20),
               Expanded(
                   child: LinearProgressIndicator(
                 value: progressValue,
