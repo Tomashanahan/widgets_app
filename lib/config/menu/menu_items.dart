@@ -39,7 +39,7 @@ const menuItems = <Menuitem>[
   ),
   Menuitem(
     link: '/progress-indicator',
-    subTitle: 'Progress Indicators',
+    subTitle: 'Barras/indicadores de carga',
     title: 'Progress Indicators',
     iconData: Icons.refresh_rounded,
     routeName: ProgressScreen.name,
@@ -47,7 +47,7 @@ const menuItems = <Menuitem>[
   ),
   Menuitem(
     link: '/snack-bars',
-    subTitle: 'snack-bars',
+    subTitle: 'son mini modales, tipo hot-toast',
     title: 'Snack Bars',
     iconData: Icons.info_outline,
     routeName: SnackBarScreen.name,
@@ -55,18 +55,26 @@ const menuItems = <Menuitem>[
   ),
   Menuitem(
     link: '/animated-container',
-    subTitle: 'animated-container',
+    subTitle: 'animaciones a un Container',
     title: 'Animated Container',
-    iconData: Icons.check_box_outline_blank,
+    iconData: Icons.playlist_play_rounded,
     routeName: AnimatedScreen.name,
     routeComponentName: AnimatedScreen(),
   ),
   Menuitem(
     link: '/ui-controls',
-    subTitle: 'ui-controls',
+    subTitle: 'Check-boxes y selects',
     title: 'Ui Controls',
-    iconData: Icons.check_box_outline_blank,
+    iconData: Icons.check_box_rounded,
     routeName: UiControlsScreen.name,
     routeComponentName: UiControlsScreen(),
+  ),
+  Menuitem(
+    link: '/tutorial',
+    subTitle: 'Pequeño tutorial para mostrar la app',
+    title: 'Tutorial',
+    iconData: Icons.play_lesson,
+    routeName: AppTutorialScreen.name,
+    routeComponentName: AppTutorialScreen(),
   ),
 ];
