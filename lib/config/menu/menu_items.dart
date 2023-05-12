@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets_app/presentation/screens/animated/animated_screen.dart';
 import 'package:widgets_app/presentation/screens/screens.dart';
 
 class Menuitem {
@@ -51,5 +52,21 @@ const menuItems = <Menuitem>[
     iconData: Icons.info_outline,
     routeName: SnackBarScreen.name,
     routeComponentName: SnackBarScreen(),
+  ),
+  Menuitem(
+    link: '/animated-container',
+    subTitle: 'animated-container',
+    title: 'Animated Container',
+    iconData: Icons.check_box_outline_blank,
+    routeName: AnimatedScreen.name,
+    routeComponentName: AnimatedScreen(),
+  ),
+  Menuitem(
+    link: '/ui-controls',
+    subTitle: 'ui-controls',
+    title: 'Ui Controls',
+    iconData: Icons.check_box_outline_blank,
+    routeName: UiControlsScreen.name,
+    routeComponentName: UiControlsScreen(),
   ),
 ];
