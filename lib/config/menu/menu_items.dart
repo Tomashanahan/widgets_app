@@ -85,4 +85,20 @@ const menuItems = <Menuitem>[
     routeName: InfiniteScrollScreen.name,
     routeComponentName: InfiniteScrollScreen(),
   ),
+  Menuitem(
+    link: '/counter',
+    subTitle: 'Counter para donde utiliza riverpod',
+    title: 'Counter',
+    iconData: Icons.add,
+    routeName: CounterScreen.name,
+    routeComponentName: CounterScreen(),
+  ),
+  Menuitem(
+    link: '/theme-changer',
+    subTitle: 'Lista de para configurar los colores de la app',
+    title: 'Theme changer',
+    iconData: Icons.color_lens,
+    routeName: ThemeChanger.name,
+    routeComponentName: ThemeChanger(),
+  ),
 ];
