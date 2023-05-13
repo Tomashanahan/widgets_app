@@ -77,4 +77,12 @@ const menuItems = <Menuitem>[
     routeName: AppTutorialScreen.name,
     routeComponentName: AppTutorialScreen(),
   ),
+  Menuitem(
+    link: '/infinite',
+    subTitle: 'Visualizando imágenes con un infinite-scroll y pull-refresh',
+    title: 'Infinite Scroll y Pull Refresh',
+    iconData: Icons.image_outlined,
+    routeName: InfiniteScrollScreen.name,
+    routeComponentName: InfiniteScrollScreen(),
+  ),
 ];
