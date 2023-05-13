@@ -45,13 +45,13 @@ class _CustomListTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final appThemColors = Theme.of(context).colorScheme;
+    final appThemColors = Theme.of(context).colorScheme.primary;
 
     return ListTile(
-      leading: Icon(menuItem.iconData, color: appThemColors.primary),
+      leading: Icon(menuItem.iconData, color: appThemColors),
       trailing: Icon(
         Icons.arrow_forward_ios_rounded,
-        color: appThemColors.primary,
+        color: appThemColors,
       ),
       title: Text(menuItem.title),
       subtitle: Text(menuItem.subTitle),

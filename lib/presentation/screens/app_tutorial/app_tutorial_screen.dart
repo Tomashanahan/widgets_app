@@ -63,7 +63,6 @@ class _AppTutorialScreenState extends State<AppTutorialScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       body: Stack(
         children: [
           PageView(
@@ -83,7 +82,8 @@ class _AppTutorialScreenState extends State<AppTutorialScreen> {
             right: 20,
             child: IconButton(
               onPressed: () => context.pop(),
-              icon: const Icon(Icons.close_rounded),
+              icon: Icon(Icons.close_rounded,
+                  color: Theme.of(context).colorScheme.primary),
             ),
           ),
           endReached

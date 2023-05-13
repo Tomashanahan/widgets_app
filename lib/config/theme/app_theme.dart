@@ -14,7 +14,7 @@ class AppTheme {
 
   AppTheme({
     this.selectedColor = 0,
-    required this.isDarkMode,
+    this.isDarkMode = false,
   })  : assert(selectedColor >= 0, 'Selected-color must be grater than 0'),
         assert(selectedColor <= colors.length,
             'Selected-color must be smaller than ${colors.length}');
@@ -27,4 +27,9 @@ class AppTheme {
       colorSchemeSeed: colors[selectedColor],
     );
   }
+
+  AppTheme copyWith({int? selectedColor, bool? isDarkMode}) => AppTheme(
+        selectedColor: selectedColor ?? this.selectedColor,
+        isDarkMode: isDarkMode ?? this.isDarkMode,
+      );
 }
